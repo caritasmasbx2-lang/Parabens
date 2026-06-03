@@ -1,25 +1,23 @@
 body {
-    background: #0f172a;
-    color: #00ff88;
+    background-color: #071330;
+    color: #00ff9d;
     font-family: Consolas, monospace;
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
+    text-align: center;
+    padding: 40px;
 }
 
 .container {
-    width: 700px;
-    text-align: center;
+    max-width: 800px;
+    margin: auto;
 }
 
 input {
     padding: 10px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 button {
     padding: 10px 20px;
-    margin-left: 10px;
     cursor: pointer;
 }
 
@@ -27,11 +25,8 @@ button {
     display: none;
 }
 
-.fase {
-    margin-top: 40px;
-}
-
 pre {
     background: black;
     padding: 20px;
+    display: inline-block;
 }
