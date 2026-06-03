@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Missão Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🧠 Missão Secreta</h1>
+
+    <div id="fase1" class="fase">
+        <h2>Fase 1</h2>
+        <p>2, 4, 8, 16, ?</p>
+
+        <input id="resposta1" type="number">
+        <button onclick="validarFase1()">Enviar</button>
+    </div>
+
+    <div id="fase2" class="fase oculto">
+        <h2>Fase 2</h2>
+
+        <pre>
+01010000
+01100001
+01101001
+        </pre>
+
+        <input id="resposta2" type="text">
+        <button onclick="validarFase2()">Enviar</button>
+    </div>
+
+    <div id="fase3" class="fase oculto">
+        <h2>Fase 3</h2>
+
+        <p>
+            Se você tem 3 filhos e cada filho tem uma irmã,
+            quantos filhos existem?
+        </p>
+
+        <input id="resposta3" type="number">
+        <button onclick="validarFase3()">Enviar</button>
+    </div>
+
+    <div id="final" class="oculto">
+        <h1>🎉 PARABÉNS PAI 🎉</h1>
+
+        <p>
+            Você me ensinou a gostar de lógica,
+            resolver problemas e nunca desistir.
+        </p>
+
+        <p>
+            O matemático faz aniversário hoje,
+            mas sua maior obra é a família que construiu.
+        </p>
+
+        <h2>❤️ Feliz Aniversário ❤️</h2>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
