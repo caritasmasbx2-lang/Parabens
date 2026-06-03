@@ -24,9 +24,9 @@ function validarFase2() {
 
     const valor =
         document.getElementById("resposta2")
-        .value
-        .trim()
-        .toLowerCase();
+            .value
+            .trim()
+            .toLowerCase();
 
     if (valor === "pai") {
 
@@ -49,9 +49,9 @@ function validarFase3() {
 
     const valor =
         document.getElementById("resposta3")
-        .value
-        .trim()
-        .toLowerCase();
+            .value
+            .trim()
+            .toLowerCase();
 
     if (valor === "mapa") {
 
@@ -64,7 +64,7 @@ function validarFase3() {
             .classList.remove("oculto");
 
         confetti({
-            particleCount: 200,
+            particleCount: 250,
             spread: 120,
             origin: { y: 0.6 }
         });
