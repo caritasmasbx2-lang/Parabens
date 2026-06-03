@@ -63,6 +63,12 @@ function validarFase3() {
             .getElementById("final")
             .classList.remove("oculto");
 
+        confetti({
+            particleCount: 200,
+            spread: 120,
+            origin: { y: 0.6 }
+        });
+
     } else {
 
         alert("Resposta incorreta.");
