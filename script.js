@@ -12,9 +12,11 @@ function validarFase1() {
         document
             .getElementById("fase2")
             .classList.remove("oculto");
-    }
-    else {
-        alert("Tente novamente");
+
+    } else {
+
+        alert("Resposta incorreta. Tente novamente.");
+
     }
 }
 
@@ -23,6 +25,7 @@ function validarFase2() {
     const valor =
         document.getElementById("resposta2")
         .value
+        .trim()
         .toLowerCase();
 
     if (valor === "pai") {
@@ -34,18 +37,23 @@ function validarFase2() {
         document
             .getElementById("fase3")
             .classList.remove("oculto");
-    }
-    else {
-        alert("Resposta incorreta");
+
+    } else {
+
+        alert("Resposta incorreta.");
+
     }
 }
 
 function validarFase3() {
 
     const valor =
-        document.getElementById("resposta3").value;
+        document.getElementById("resposta3")
+        .value
+        .trim()
+        .toLowerCase();
 
-    if (valor == 4) {
+    if (valor === "mapa") {
 
         document
             .getElementById("fase3")
@@ -54,8 +62,10 @@ function validarFase3() {
         document
             .getElementById("final")
             .classList.remove("oculto");
-    }
-    else {
-        alert("Tente novamente");
+
+    } else {
+
+        alert("Resposta incorreta.");
+
     }
 }
