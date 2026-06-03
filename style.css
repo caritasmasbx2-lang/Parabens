@@ -1,24 +1,64 @@
 body {
-    background-color: #071330;
+    background: #071330;
     color: #00ff9d;
     font-family: Consolas, monospace;
     text-align: center;
     padding: 40px;
+    margin: 0;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
 }
 
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+}
+
+.terminal {
+    background: #000;
+    border: 2px solid #00ff9d;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px auto;
+    max-width: 600px;
+    text-align: left;
+    box-shadow: 0 0 25px rgba(0, 255, 157, 0.3);
+}
+
+.terminal p {
+    margin: 8px 0;
+}
+
+.fase {
+    margin-top: 40px;
+}
+
 input {
-    padding: 10px;
-    margin: 10px;
+    padding: 12px;
+    width: 250px;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
     cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+button:hover {
+    transform: scale(1.05);
 }
 
 .oculto {
@@ -27,21 +67,29 @@ button {
 
 pre {
     background: black;
+    color: #00ff9d;
     padding: 20px;
+    border-radius: 10px;
     display: inline-block;
 }
 
-.terminal {
-    background: #000;
-    border: 2px solid #00ff9d;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 500px;
-    text-align: left;
-    box-shadow: 0 0 20px rgba(0,255,157,0.3);
+.pai {
+    font-size: 2rem;
+    animation: brilho 1.5s infinite;
 }
 
-.terminal p {
-    margin: 8px 0;
+@keyframes brilho {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
 }
